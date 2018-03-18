@@ -1,3 +1,5 @@
+require_relative('./river')
+
 class Bear
 
   attr_reader :name
@@ -22,6 +24,11 @@ class Bear
     else
       return false
     end
+  end
+
+  def hunt_for_fish(a_river)
+    a_river.river_stock.shift()
+    
   end
 
 end
