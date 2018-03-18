@@ -27,8 +27,13 @@ class Bear
   end
 
   def hunt_for_fish(a_river)
-    a_river.river_stock.shift()
-    
+    fish_being_eaten = a_river.river_stock_decreases_after_bear_eats_fish()
+    @stomach << fish_being_eaten
   end
+
+  # def hunt_for_fish( the_river_to_hunt )
+  #   fish_being_eaten =  the_river_to_hunt.get_one_fish()
+  #   @stomach << fish_being_eaten
+  # end
 
 end

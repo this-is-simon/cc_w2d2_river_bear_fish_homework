@@ -24,7 +24,6 @@ class RiverTest < MiniTest::Test
   def test_river_has_fish
     result = @river_stock
     assert_equal(result, @river1.river_stock)
-
   end
 
   def test_fish_count
@@ -32,7 +31,6 @@ class RiverTest < MiniTest::Test
     assert_equal(result,@river1.fish_count)
   end
 
-  #This test doesn't work
   def test_river_stock_decreases_after_bear_eats_fish
     @bear1.add_fish_to_stomach(@fish1)
     actual_result = [@fish2, @fish3]

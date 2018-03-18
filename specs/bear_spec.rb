@@ -43,7 +43,6 @@ class BearTest < MiniTest::Test
   def test_bear_hunt_for_fish
     @bear1.hunt_for_fish(@river1)
     assert_equal([@fish2, @fish3], @river1.river_stock)
-    # assert_equal([@fish1], @bear1.stomach)
   end
 
 end
