@@ -33,10 +33,11 @@ class RiverTest < MiniTest::Test
   end
 
   #This test doesn't work
-  # def test_river_stock_decreases_after_bear_eats_fish
-  #   actual_result = [@fish2, @fish3]
-  #   expected_result = @river_stock.river_stock_decreases_after_bear_eats_fish
-  #   assert_equal(actual_result, expected_result)
-  # end
+  def test_river_stock_decreases_after_bear_eats_fish
+    @bear1.add_fish_to_stomach(@fish1)
+    actual_result = [@fish2, @fish3]
+    expected_result = @river1.river_stock_decreases_after_bear_eats_fish
+    assert_equal(actual_result, expected_result)
+  end
 
 end
