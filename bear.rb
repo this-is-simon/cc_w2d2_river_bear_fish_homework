@@ -31,9 +31,4 @@ class Bear
     @stomach << fish_being_eaten
   end
 
-  # def hunt_for_fish( the_river_to_hunt )
-  #   fish_being_eaten =  the_river_to_hunt.get_one_fish()
-  #   @stomach << fish_being_eaten
-  # end
-
 end
