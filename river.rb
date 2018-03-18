@@ -11,10 +11,10 @@ class River
   end
 
   #This method returns a NoMethod Error
-  def river_stock_decreases_after_bear_eats_fish
-    # @bear1.add_fish_to_stomach(@a_fish)
-    @river_stock.shift()
-    return @river_stock
-  end
+  # def river_stock_decreases_after_bear_eats_fish
+  #   # @bear1.add_fish_to_stomach(@a_fish)
+  #   @river_stock.shift()
+  #   return @river_stock
+  # end
 
 end
