@@ -16,6 +16,7 @@ class Bear
 
   def add_fish_to_stomach(a_fish)
     @stomach << a_fish
+    return @stomach
   end
 
   def is_bear_starving
